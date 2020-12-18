@@ -21,8 +21,36 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
-  <iframe width="100%" height="500" frameborder="0"
-  src="https://observablehq.com/embed/@bellabuchanan/part-2-final?cell=*"></iframe>
+  
+  
+  <h1>Hi!!!</h1>
+    <div id="observablehq-405fb419">
+    <div class="observablehq-d3"></div>
+    <div class="observablehq-hi"></div>
+    <div class="observablehq-drawChart"></div>
+    <div class="observablehq-getRandomNumberInRange"></div>
+    <div class="observablehq-getRandomValue"></div>
+    <div class="observablehq-sentenceCase"></div>
+    <div class="observablehq-getStatusKey"></div>
+    <div class="observablehq-getProb"></div>
+  </div>
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@bellabuchanan/part-2-final.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "d3") return Inspector.into("#observablehq-405fb419 .observablehq-d3")();
+      if (name === "hi") return Inspector.into("#observablehq-405fb419 .observablehq-hi")();
+      if (name === "drawChart") return Inspector.into("#observablehq-405fb419 .observablehq-drawChart")();
+      if (name === "getRandomNumberInRange") return Inspector.into("#observablehq-405fb419 .observablehq-getRandomNumberInRange")();
+      if (name === "getRandomValue") return Inspector.into("#observablehq-405fb419 .observablehq-getRandomValue")();
+      if (name === "sentenceCase") return Inspector.into("#observablehq-405fb419 .observablehq-sentenceCase")();
+      if (name === "getStatusKey") return Inspector.into("#observablehq-405fb419 .observablehq-getStatusKey")();
+      if (name === "getProb") return Inspector.into("#observablehq-405fb419 .observablehq-getProb")();
+    });
+  </script>
+  
+  
+  
   <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navigation w-nav">
     <div class="navigation-wrap">
       <a href="index.html" aria-current="page" class="logo-link w-nav-brand w--current"><img src="images/business-logo2x.png" width="108" alt="" class="logo-image"></a>
